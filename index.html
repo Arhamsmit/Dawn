@@ -1,80 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut icon" type="icon" href="./images/logo.png" />
     <title>Dawn</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
         }
-        #header{
+        #header {
             width: 100%;
-            padding: 10px;
+            padding: 05px;
             background-color: black;
         }
-        #header-ul{
+        #header-ul {
             display: flex;
             list-style: none;
             gap: 20px;
             text-align: center;
             justify-content: center;
         }
-        .header-a{
+        .header-a {
             font-size: 10px;
             color: #fff;
             text-align: center;
             text-decoration: none;
         }
-        #logo{
+        #logo {
+            padding: 15px;
             padding-bottom: 5px;
             text-align: center;
         }
-        .logo-p{
+        .logo-h {
             font-size: 60px;
         }
-        .pages{
+        .pages {
             font-size: 12px;
             color: rgb(110, 110, 110);
             text-decoration: none;
         }
-        #boder{
+        #boder {
             width: 78%;
-            border-top: 4px solid black;
-        }    
-        #links{
+            border-top: 3px solid black;
+        }
+        #links {
             width: 100%;
         }
-        #second-ul{
-            padding-bottom: 05px;
-            padding-top: 05px;
+        #second-ul {
+            padding: 10px;
+            padding-left: 120px;
+            /*padding-bottom: 05px;
+            padding-top: 05px;*/
             display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 10px;
             text-align: center;
             justify-content: center;
         }
-        .second-links{
-            text-align: center;
-            font-size: 10px;
+        .second-links {
+            width: 100%;
+            font-size: 12px;
             color: black;
             text-decoration: none;
         }
-        .second-links:hover{
+        .second-links:hover {
             color: red;
         }
-        #search{
-             border: none;
+        #search {
+            width: 200px;
+            border: none white;
         }
-        #hr{
-        width: 78%; 
-        padding-right: -30px;
+        #search:hover {
+            height: 30px;
+            margin-right: 30px;
+        }
+        #hr {
+            width: 78%;
+            padding-right: 0px;
+        }
+        #body-container {
+            margin-top: 40px;
+            margin-left: 165px;
+        }
+        #first-sidebar-content {
+            width: 30%;
+        }
+        #second-sidebar-content {
+            margin-top: 10px;
+            width: 30%;
+        }
+        #third-sidebar-content{
+            width: 35%;
+            height: 19vh;
+            margin-top: 10px;
+        }
+        #fourth-sidebar-content{
+            width: 35%;
+            height: 20vh;
+            margin-top: 10px;
+        }
+        .second-sidebar-p {
+            margin-right: -20px;
+        }
+        #second-body-content {
+            margin-top: -890px;
+            margin-left: 30rem;
+            width: 22%;
+        }
+        .body-h {
+            text-align: center;
+        }
+        #a-div {
+            padding-bottom: 10px;
+        }
+        a{
+            font-size: 12px;
+            text-decoration: none;
+            color: red;
+        }
+        #hr2 {
+            width: 30%;
+        }
+        #third-body-content {
+            margin-left: 30rem;
+            width: 19%;
+        }
+        #fourth-body-content {
+            margin-left: 30rem;
+            width: 20%;
+        }
+        #fifth-body-content {
+            margin-left: 30rem;
+            width: 20%;
+        }
+        #footer-container {
+            width: 100%;
+            height: 20vh;
+            padding: 20px;
+            background-color: black;
+        }
+        #para-container {
+            margin-left: 10rem;
+            margin-top: -90px;
+        }
+        #logo-links{
+            border-bottom: 2px solid white;
+        }
+        #footer-container{
+            width: 100%;
+            height: 45vh;
+            padding: 150px;
+            padding-top: 30px;
+        }
+        #footer-links{
+            width: 100%;
+            display: flex;
+            gap: 60px;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+        .ul{
+            list-style: none;
+        }
+        .fa{
+            font-size: 13px;
+            color: #fff;
+        }
+        #S-icons{
+            text-align: end;
+            margin-top: -40px;
+            margin-right: 05px;
         }
     </style>
 </head>
+
 <body>
     <div id="main-Container">
         <div id="header">
@@ -96,14 +199,15 @@
         </div>
 
         <div id="logo">
-            <p class="logo-p" href="">DAWN</p>
+            <img src="images/hlogo.png" alt="Dawn" id="h-logo" width="200"/>  
+            <br />          
             <a class="pages" href="">E-PAPER | </a>
             <a class="pages" href="">OCTOBER 23,2024</a>
         </div>
         <center>
-        <div id="boder">
-        </div>
-    </center>
+            <div id="boder">
+            </div>
+        </center>
         <div id="links">
             <ul id="second-ul">
                 <li><a class="second-links" href="">HOME</a></li>
@@ -124,17 +228,181 @@
                 <li><a class="second-links" href="">ARCHIVE</a></li>
                 <li><a class="second-links" href="">FLOOD DONATIONS</a></li>
                 <form>
-                   <i class="fa-solid fa-magnifying-glass" class="search"></i> <input type="search" name="search" placeholder="Search" id="search"/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" id="search" placeholder="Search">
                 </form>
             </ul>
             <center>
-            <hr id="hr"/>
+                <hr id="hr" />
             </center>
         </div>
 
         <!--body-section-->
         <div id="body-container">
+            
+            <div id="sidebar">            
+                <div id="first-sidebar-content">
+                <h2>4 cops injured as convoy of prison vans attacked near Sangjiani: police
+                </h2>
+                <img src="./images/4cops.png" alt="4cops" id="cops" width="400" />
+                <p class="first-sidebar-p">CPJ calls for independent probe into killing of journalists in Lebanon.<br />
+                    Related
+                <blockquote>What drove Hamas on Oct 7 and what drives them still?
+                    Israel to send negotiators to Qatar for Gaza truce talks
+                    No propaganda on earth can hide the wound that is Palestine</blockquote>
+                </p>
+            </div>
+            <hr id="hr2" />
+
+            <div id="second-sidebar-content">
+                <h3>15 security men martyred in attacks across KP
+                </h3>
+                <img src="./images/security.jpg" alt="4cops" id="cops" width="150" />
+                <div id="para-container">
+                    <p class="second-sidebar-p">
+                    <blockquote>Ten FC men lose lives repulsing assault on D.I. Khan post; cadet gunned down in Lakki
+                        Marwat; 2 cops, 2 militants dead in Bannu; soldier martyred in S. Waziristan.</blockquote>
+                    </p>
+                </div>
+            </div>
+            <hr id="hr2" />
+
+            <div id="third-sidebar-content">
+                <h3>UN Secretary General decries ‘harrowing levels of death, injury and destruction’ in north Gaza
+                </h3>
+                <img src="./images/un.png" alt="UN" id="un" width="150" />
+                <div id="para-container">
+                    <p class="third-sidebar-p">
+                    <blockquote>Three journalists among those killed in Gaza’s Shati refugee camp.</blockquote>
+                    </p>
+                </div>
+            </div>
+            <hr id="hr2" />
+            
+            <div id="fourth-sidebar-content">
+                <h3>Four terrorists killed in separate Khyber Pakhtunkhwa operations: ISPR
+                </h3>
+                <img src="./images/pak.jpg" alt="pak" id="pak" width="150" />
+                <div id="para-container">
+                    <p class="fourth-sidebar-p">
+                    <blockquote>One operation conducted in North Waziristan, the other in Khyber district.</blockquote>
+                    </p>
+                </div>
+            </div>
+            <hr id="hr2" />
+
         </div>
+
+
+            <!--Center-content-->
+            <div id="second-body-content">
+                <div id="a-div"><a href="#" id="a">MUST READ STORIES</a></div>
+                <img src="./images/divisive.jpg" alt="4cops" id="cops" width="300" />
+                <h3 class="body-h">‘Divisive legacy, divided court’: Justice Isa’s last bow
+                </h3>
+            </div>
+
+            <div id="third-body-content">
+                <img src="./images/cjp.jpg" alt="cjp" id="cjp" width="300" />
+                <h3 class="body-h">With retired CJP Isa, to see or not to see was almost always the question
+                </h3>
+            </div>
+
+            <div id="fourth-body-content">
+                <img src="./images/PIA.jpg" alt="PIA" id="PIA" width="300" />
+                <h3 class="body-h">Editorial: PIA bidders’ attempts to force more concessions from authorities is
+                    unacceptable
+                </h3>
+            </div>
+
+            <div id="fifth-body-content">
+                <img src="./images/long.jpg" alt="Long-term" id="long" width="300" />
+                <h3 class="body-h">Long-term political commitment is needed against transnational organised crime
+                </h3>
+            </div>
+
+        </div>
+        <!--Footer-Section-->
+        <div id="footer-container">
+            <footer id="footer">
+                <div id="logo-links">
+                    <div id="footer-logo">
+                        <img src="./images/logo-white.png" alt="Dawn" id="f-logo" width="100" />
+                    </div>
+                    <div id="S-icons">
+                        <a class="S-icons" href=""><img src="images/Whatsapp.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/twitter.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/facebook.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/instagram.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/apple.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/anddroid.png" width="25"/></a>
+                        <a class="S-icons" href=""><img src="images/appGallery.png" width="120"/></a>
+                    </div>
+                </div>
+
+                <div id="footer-links">
+                <div id="pages-container1">
+                    <ul class="ul">
+                        <li><a class="fa" href="">CONTACT</a></li>
+                        <li><a class="fa" href="">TRERMS OF USE</a></li>
+                        <li><a class="fa" href="">REPRODUCTION COPYRIGHT</a></li>
+                        <li><a class="fa" href="">CONTRIBUTION GUIDLINES</a></li>
+                        <li><a class="fa" href="">PRIVACY</a></li>
+                        <li><a class="fa" href="">COMMENT MODERATION</a></li>
+                        <li><a class="fa" href="">CODE OF ETHIC</a></li>
+                    </ul>
+                </div>
+ 
+                <div id="pages-container2">
+                    <ul class="ul">
+                        <li><a class="fa" href="#">SUBSCRIBE TO NEWSPAPER</a></li>
+                        <li><a class="fa" href="#">ADVERTISE ON DAWN.COM</a></li>
+                        <li><a class="fa" href="#">SPONSORED CONTENT</a></li>
+                        <li><a class="fa" href="#">CLASSIFIEDS</a></li>
+                        <li><a class="fa" href="#">OBITUARIES</a></li>
+                    </ul>
+                </div>
+                     
+                <div id="pages-container3">
+                    <ul class="ul">
+                        <li><a class="fa" href="#">PRAYER TIMINGS</a></li>
+                        <li><a class="fa" href="#">STOCKFOREX/GOLD</a></li>
+                        <li><a class="fa" href="#">WEATHER</a></li>
+                    </ul> 
+                </div>
+
+                <div id="pages-container4">
+                    <ul class="ul">
+                        <li><a class="fa" href="">DAWN</a></li>
+                        <li><a class="fa" href="">HERALD</a></li>
+                        <li><a class="fa" href="">AURORA</a></li>
+                        <li><a class="fa" href="">PRISM</a></li>
+                        <li><a class="fa" href="">SPECIAL REPORTS</a></li>
+                        <li><a class="fa" href="">DAWN NEWS</a></li>
+                    </ul>
+                </div>
+
+                <div id="pages-container5">
+                    <ul class="ul">
+                        <li><a class="fa" href="">IMAGES</a></li>
+                        <li><a class="fa" href="">EOS/ICON/YOUNG WORLD</a></li>
+                        <li><a class="fa" href="">CITYM89</a></li>
+                        <li><a class="fa" href="">TEELI</a></li>
+                    </ul>
+                </div>
+
+                <div id="pages-container6">
+                    <ul class="ul">
+                        <li><a class="fa" href="">Copyright © 2024, Dawn</a></li>
+                        <li><a class="fa" href="">Newskit Publishing Platform</a></li>
+                    </ul>
+                </div>
+
+                </div>
+            </footer>
+        </div>
+
     </div>
 </body>
+
 </html>
